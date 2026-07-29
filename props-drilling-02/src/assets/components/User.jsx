@@ -1,17 +1,31 @@
 
 import React from 'react'
 
-const arr =[10,20,30,40]
+const arr =[
+    {user: "Ahmed",
+        age: 30
+    },
+    {
+        user:"Ali",
+        age:25
+    },
+    {
+        user:"Asad",
+        age: 28
+    }
+]
+
+  arr.map(function(elem){
+     console.log(elem)
+      })
 
 const user = () => {
   return (
     <div className='parent'>
-      {arr.map(function(elem){
-      return <h1>{elem*2}</h1>
-      })}
+    
     </div>
   )
 }
 
-export default user
+export default user;
 
