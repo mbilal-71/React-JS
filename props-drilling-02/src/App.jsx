@@ -1,15 +1,15 @@
 import React from 'react'
 import Card from "./assets/components/card";
-import User from "./assets/components/User";
+import User from "./assets/components/user";
 
 const App = () => {
   return (
     <>
     <div className="parent">
-      <Card/>
-      <Card/>  
+      {/* <Card/>
+      <Card/>   */}
     
-<User />
+      <User />
     </div>
     
     </>

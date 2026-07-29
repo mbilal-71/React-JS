@@ -1,10 +1,14 @@
 
 import React from 'react'
 
+const arr =[10,20,30,40]
+
 const user = () => {
   return (
-    <div>
-      <h1 style={{ color: "white" }}>User</h1>;
+    <div className='parent'>
+      {arr.map(function(elem){
+      return <h1>{elem*2}</h1>
+      })}
     </div>
   )
 }
