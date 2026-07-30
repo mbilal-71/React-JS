@@ -1,28 +1,32 @@
 
 import React from 'react'
 
-const arr =[
-    {user: "Ahmed",
-        age: 30
-    },
-    {
-        user:"Ali",
-        age:25
-    },
-    {
-        user:"Asad",
-        age: 28
-    }
-]
+// const arr =[
+//     {user: "Ahmed",
+//         age: 30
+//     },
+//     {
+//         user:"Ali",
+//         age:25
+//     },
+//     {
+//         user:"Asad",
+//         age: 28
+//     }
+// ]
 
-  arr.map(function(elem){
-     console.log(elem)
-      })
+//   arr.map(function(elem){
+//      console.log(elem)
+//       })
 
-const user = () => {
+  const arr = [10,20,30]
+
+const user = (props) => {
   return (
-    <div className='parent'>
-    
+    <div style={{color:"white"}}>
+    <h1>
+      Ahmed, {props.name}</h1>
+
     </div>
   )
 }
