@@ -19,13 +19,16 @@ import React from 'react'
 //      console.log(elem)
 //       })
 
-  const arr = [10,20,30]
+  // const arr = [10,20,30]
+
+
 
   const user = (props) => {
   return (
     <div style={{color:"white"}}>
     <h1>
-      Ahmed, {props.name}</h1>
+     {props.name}
+     </h1>
 
     </div>
   )
