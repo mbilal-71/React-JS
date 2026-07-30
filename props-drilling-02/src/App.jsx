@@ -8,14 +8,12 @@ const App = () => {
   return (
     
     <div className="parent">
-      {/* <Card/>
-      <Card/>   */}
+      {/* <Card/> */}
    {arr.map(function(elem){
     return <User name = {elem}/>
    })}
       
     </div>
-    
     
   )
 }

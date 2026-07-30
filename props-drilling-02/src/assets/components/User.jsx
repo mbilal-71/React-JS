@@ -21,7 +21,7 @@ import React from 'react'
 
   const arr = [10,20,30]
 
-const user = (props) => {
+  const user = (props) => {
   return (
     <div style={{color:"white"}}>
     <h1>
@@ -31,5 +31,4 @@ const user = (props) => {
   )
 }
 
-export default user;
-
+export default user
