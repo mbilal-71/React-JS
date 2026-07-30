@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from "./assets/components/card";
-import User from "./assets/components/user";
+
 
 // const arr = [10,20,30]
 
@@ -23,7 +23,7 @@ import User from "./assets/components/user";
       tag1: "Full Time",
       tag2: "Mid Level",
       pay: "$70/hour",
-      location: "Hyderabad, India"
+      location: "Toronto, Canada"
     },
     {
       brandLogo: "https://substackcdn.com/image/fetch/$s_!G1lk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.jpeg",
@@ -103,21 +103,19 @@ import User from "./assets/components/user";
       tag1: "Full Time",
       tag2: "Mid Level",
       pay: "$70/hour",
-      location: "Mumbai, India"
+      location: "Lhr, Pak"
     }
   ];
 
 const App = () => {
   return (
-    
-    <div className="parent">
-      {/* <Card/> */}
-   {jobOpenings.map(function(elem){
-    return <User name = {elem.brandLogo}/>
-   })}
-      
+    <div className='parent'>
+      {jobOpenings.map(function (elem, idx) {
+        return <div key={idx}>
+          <Card  location= {elem.location} company={elem.companyName} datePosted={elem.datePosted} post={elem.post} tag1={elem.tag1} brandLogo={elem.brandLogo} pay={elem.pay} tag2={elem.tag2} />
+        </div>
+      })}
     </div>
-    
   )
 }
 
