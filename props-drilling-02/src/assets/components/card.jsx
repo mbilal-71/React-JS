@@ -2,8 +2,6 @@ import { Bookmark } from "lucide-react";
 const card = (props) => {
     return (
 
-
-
         <div className="card">
             <div className="top">
                 <img src={props.brandLogo} alt="" />

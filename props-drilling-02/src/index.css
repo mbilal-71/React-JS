@@ -42,7 +42,7 @@ body {
   width: 42px;
   border-radius: 50%;
   border: 1px solid #dadada;
-  padding: 3px;
+  padding: 2px;
   object-fit: cover;
 }
 .top button{
