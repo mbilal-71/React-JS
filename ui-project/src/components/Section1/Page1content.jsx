@@ -4,7 +4,7 @@ import RightText from './RightText'
 
 const Page1content = () => {
     return (
-        <div className='px-18 py-3 h-[90vh] w-full bg-gray-500 flex gap-10 '>
+        <div className='px-18 py-3 h-[90vh] w-full flex gap-10 '>
             <LeftText />
             <RightText />
         </div>
