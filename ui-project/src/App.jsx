@@ -3,14 +3,14 @@ import Section2 from './components/Section2/Section2'
 import Page1content from './components/Section1/Page1content'
 
 const App = () => {
-condt users = [
+    const users = [
         {
-            img: 'https://media.istockphoto.com/id/2232984535/photo/businesslady-dressed-in-elegant-jacket-holds-tablet-posing-in-workspace.jpg?s=612x612&w=0&k=20&c=Wk0MtatgZ_fm6Gx8Q_JemQHtmK2T_r34Dgf1buFNO7w=',
+            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRstZv7AtQn7IN6CpR7Go7trCo_JqHomt4ugIy3acPePQ&s=10',
             intro: '',
             tag: 'Satisfied'
         },
         {
-            img: 'https://media.istockphoto.com/id/2228764569/photo/hispanic-female-software-developer-coding-at-night-in-office.jpg?s=612x612&w=0&k=20&c=d6bNhps-84PN0uBSzec-s1Dqwe6e74A1QIvDqrMFBCI=',
+            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLe1hD2oNLVFpFdWQ4HwbP2SCjFAm5Q2GU25F6RxA-YdXURc529M9eY_gJ&s=10',
             intro: '',
             tag: 'Underserved'
         },
@@ -23,7 +23,7 @@ condt users = [
 
     return (
         <div className='bg-gray-200'>
-            <Section1 />
+            <Section1 users={users} />
 
 
         </div>
