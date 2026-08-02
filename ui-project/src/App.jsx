@@ -1,6 +1,4 @@
 import Section1 from './components/Section1/Section1'
-import Section2 from './components/Section2/Section2'
-import Page1content from './components/Section1/Page1content'
 
 const App = () => {
     const users = [
@@ -24,8 +22,6 @@ const App = () => {
     return (
         <div className='bg-gray-200'>
             <Section1 users={users} />
-
-
         </div>
     )
 }
