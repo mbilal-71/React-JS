@@ -1,4 +1,6 @@
-// import React, { useState } from 'react'
+import React, { useState } from 'react'
+
+import { useEffect } from "react"
 
 const App = () => {
   // const [num, setNum] = useState(0)
@@ -40,12 +42,26 @@ const App = () => {
 
   //USE EFFECT:
 
-
+  const [num, setNum] = useState(0)
+  const [num2, setNum2] = useState(10)
+  useEffect(function () {
+    console.log('Use effect is running')
+  }, [num])
 
   return (
     <div>
       {/* <h1>{num}  </h1>
       <button onClick={btnClicked}>Click</button> */}
+      <h1>{num}</h1>
+      <h1>{num2}</h1>
+      <button onClick={() => {
+        setNum(num + 1)
+      }}
+        onDoubleClick={() => {
+          setNum2(num2 + 10)
+        }}
+      >Click
+      </button>
 
     </div >
   )
