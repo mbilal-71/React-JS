@@ -38,6 +38,8 @@ const App = () => {
   //   setNum(prev => (prev + 1))
   // }
 
+  //USE EFFECT:
+
 
 
   return (

@@ -39,9 +39,9 @@ const App = () => {
     <div>
       <button onClick={getData}>Get Data</button>
       <div>
-        {data.map(function (elem, idx) {
+        {data.map(function (elem) {
 
-          return <h3>Hello, {elem.url} {idx}</h3>
+          return <h3> {elem.url}</h3>
         })}
       </div>
     </div>
