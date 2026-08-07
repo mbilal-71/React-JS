@@ -42,26 +42,53 @@ const App = () => {
 
   //USE EFFECT:
 
-  const [num, setNum] = useState(0)
-  const [num2, setNum2] = useState(10)
+  // const [num, setNum] = useState(0)
+  // const [num2, setNum2] = useState(10)
+  // useEffect(function () {
+  //   console.log('Use effect is running')
+  // }, [num])
+
+  const [a, setA] = useState(0)
+
+  const [b, setB] = useState(0)
+
+  function aChanging() {
+    console.log('Value of A is changing')
+  }
+  function bChanging() {
+    console.log('Value of B is changing')
+  }
+
   useEffect(function () {
-    console.log('Use effect is running')
-  }, [num])
+    aChanging()
+    bChanging()
+    console.log('use effect is running')
+  }, [a, b])
 
   return (
     <div>
       {/* <h1>{num}  </h1>
       <button onClick={btnClicked}>Click</button> */}
-      <h1>{num}</h1>
+      {/* <h1>{num}</h1>
       <h1>{num2}</h1>
       <button onClick={() => {
         setNum(num + 1)
       }}
-        onDoubleClick={() => {
+        onMouseLeave={() => {
           setNum2(num2 + 10)
         }}
-      >Click
-      </button>
+      >
+        Click
+      </button> */}
+
+      <h1>A is {a}</h1>
+      <h1>B is {b}</h1>
+      <button onClick={() => {
+        setA(a + 1)
+      }}>Change A</button>
+      <button onClick={() => {
+        setB(b - 1)
+      }}>Change B</button>
 
     </div >
   )
