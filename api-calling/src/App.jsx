@@ -38,12 +38,12 @@ const App = () => {
   return (
     <div>
       <button onClick={getData}>Get Data</button>
-      {/* <div>
+      <div>
         {data.map(function (elem, idx) {
 
           return <h3>Hello, {elem.url} {idx}</h3>
         })}
-      </div> */}
+      </div>
     </div>
   )
 }

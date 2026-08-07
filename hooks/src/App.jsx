@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
 const App = () => {
   // const [num, setNum] = useState(0)
-
-
 
   // const increaseNum = () => {
   //   setNum(num + 1)
@@ -33,18 +31,19 @@ const App = () => {
   //   )
   // }
 
-  const [num, setNum] = useState(10)
-  const btnClicked = () => {
-    setNum(prev => (prev + 1))
-    setNum(prev => (prev + 1))
-    setNum(prev => (prev + 1))
-  }
+  // const [num, setNum] = useState(10)
+  // const btnClicked = () => {
+  //   setNum(prev => (prev + 1))
+  //   setNum(prev => (prev + 1))
+  //   setNum(prev => (prev + 1))
+  // }
+
+
 
   return (
     <div>
-      <h1>{num}  </h1>
-
-      <button onClick={btnClicked}>Click</button>
+      {/* <h1>{num}  </h1>
+      <button onClick={btnClicked}>Click</button> */}
 
     </div >
   )
