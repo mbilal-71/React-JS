@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+   
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+     background: #111;
+}
+.nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 15px;
+background-color: lightseagreen;
+}
+.tags{
+display: flex;
+justify-content: space-between;
+align-items: center; 
+gap: 40px;
+text-decoration: none;
+}
