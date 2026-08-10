@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
+
 import { Link } from 'react-router-dom'
 const Navbar = () => {
+    const [theme, setTheme] = useState('Dark')
+
     return (
         <div className='nav'>
-            <h2>Devsinc</h2>
+            <h2>Theme is {theme}</h2>
             <div className='tags'>
-                <Link to='/'>Home</Link>
-                <Link to='/about'>About</Link>
-                <Link to='/contact'>Contact</Link>
+                <button>
+                    Change Theme
+                </button>
             </div>
         </div>
     )
