@@ -5,6 +5,7 @@ import { ThemeDataContext } from '../context/ThemeContext'
 const Nav2 = () => {
     const data = useContext(ThemeDataContext)
 
+
     return (
         <div className='nav2'>
             <h4>Home</h4>

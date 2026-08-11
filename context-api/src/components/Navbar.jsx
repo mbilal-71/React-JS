@@ -4,9 +4,10 @@ import { ThemeDataContext } from '../context/ThemeContext'
 
 const Navbar = ({ children, theme }) => {
     const data = useContext(ThemeDataContext)
-    console.log(data)
+    const [theme1] = useContext(ThemeDataContext)
+
     return (
-        <div className='nav'>
+        <div className={theme1}>
             <h2>
                 Devsinc
             </h2>
